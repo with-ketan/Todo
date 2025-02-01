@@ -1,14 +1,9 @@
+{% extends 'master.html' %}
 {% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/index.css' %}">
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <title>Signup</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Font Awesome 5 Brands:wght@400&display=swap" />
-</head>
+
+
+
+{% block content %}
 <body>
     <div class="signup-login">
         <div class="signup-box">
@@ -59,4 +54,4 @@
 
     </div>
 </body>
-</html>
+{% endblock content %}

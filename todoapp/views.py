@@ -10,6 +10,9 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 
 
+def index(request):
+    return render(request,'index.html')
+
 def signup(request):
     if request.method == 'POST':
         fnm = request.POST.get('fnm')
@@ -72,9 +75,6 @@ def edit_todo(request, srno):
     return render(request, 'edit.html', {'obj': obj})
 
 
-
-
-
 def signout(request):
     logout(request)
-    return redirect('/login')
+    return redirect('/')
